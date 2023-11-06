@@ -1,7 +1,19 @@
 {
   "extends": "@mendix/pluggable-widgets-tools/configs/tsconfig.base",
   "compilerOptions": {
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "lib": ["es5", "es6"],
+    "target": "es5",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "strict": true,
+    // "noUnusedLocals":true,
+    "noImplicitAny": true,
+    "downlevelIteration": true
   },
   "include": ["./src", "./typings"]
 }

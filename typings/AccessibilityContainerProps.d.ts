@@ -3,14 +3,16 @@
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix Widgets Framework Team
  */
-import { CSSProperties } from "react";
+import { ComponentType, CSSProperties, ReactNode } from "react";
 
 export interface AccessibilityContainerContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    sampleText: string;
+    alternativeText: string;
+    content?: ReactNode;
+    placeholder: string;
 }
 
 export interface AccessibilityContainerPreviewProps {
@@ -22,5 +24,7 @@ export interface AccessibilityContainerPreviewProps {
     style: string;
     styleObject?: CSSProperties;
     readOnly: boolean;
-    sampleText: string;
+    alternativeText: string;
+    content: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
+    placeholder: string;
 }

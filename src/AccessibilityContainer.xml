@@ -8,10 +8,32 @@
     <icon/>
     <properties>
         <propertyGroup caption="General">
-            <property key="sampleText" type="string" required="false">
-                <caption>Default value</caption>
-                <description>Sample text input</description>
-            </property>
+            <propertyGroup caption="Accessibility">
+                <property key="alternativeText" type="string" required="false">
+                    <caption>Alternative text</caption>
+                    <description>The text which will be inserted into alt tags for this container.</description>
+                </property>
+                <property key="content" type="widgets" required="false">
+                    <caption>Content</caption>
+                    <description>Container contents</description>
+                </property>
+            </propertyGroup>
+
+            <propertyGroup caption="Events">
+                <property key="placeholder" type="string" required="false">
+                    <caption>Placeholder</caption>
+                    <description/>
+                </property>
+            </propertyGroup>
+            
+            <propertyGroup caption="Visibility">
+                <systemProperty key="Visibility"/>
+            </propertyGroup>   
+ 
+            <propertyGroup caption="Common">
+                <systemProperty key="Name"/>
+                <systemProperty key="TabIndex"/>
+            </propertyGroup>   
         </propertyGroup>
     </properties>
 </widget>
