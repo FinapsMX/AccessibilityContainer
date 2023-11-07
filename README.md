@@ -1,7 +1,7 @@
 ## AccessibilityContainer
 A Mendix Pluggable Widget usable as a container with extra options for accessibility features.
 
-![image](https://github.com/FinapsMX/AccessibilityContainer/assets/103512027/abbf8940-deb2-418f-a0f7-201ecfc904da)
+<img src="https://github.com/FinapsMX/AccessibilityContainer/assets/103512027/abbf8940-deb2-418f-a0f7-201ecfc904da" width="600" />
 
 ## Features
  - `aria-label` to summarise the content.
