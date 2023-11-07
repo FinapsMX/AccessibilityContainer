@@ -13,7 +13,7 @@ A Mendix Pluggable Widget usable as a container with extra options for accessibi
  - Drag the widget onto pages from the toolbox. 
 
 ## Issues, suggestions and feature requests
-[link to GitHub issues]
+[Issues page](https://github.com/FinapsMX/AccessibilityContainer/issues)
 
 ## Development and contribution
 
