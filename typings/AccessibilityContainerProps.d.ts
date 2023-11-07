@@ -14,6 +14,7 @@ export interface AccessibilityContainerContainerProps {
     ariaLabel: string;
     ariaDescription: string;
     ariaDisabled: boolean;
+    role: string;
     content?: ReactNode;
     onClick?: ActionValue;
 }
@@ -30,6 +31,7 @@ export interface AccessibilityContainerPreviewProps {
     ariaLabel: string;
     ariaDescription: string;
     ariaDisabled: boolean;
+    role: string;
     content: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
     onClick: {} | null;
 }

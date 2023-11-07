@@ -11,15 +11,19 @@
             <propertyGroup caption="Accessibility">
                 <property key="ariaLabel" type="string" required="true">
                     <caption>Aria label</caption>
-                    <description>The text which will be inserted into the aria-label attribute of this container. Eg. "Calendar"</description>
+                    <description>The text which will be inserted into the aria-label attribute of this container. Eg. "Order Button"</description>
                 </property>
                 <property key="ariaDescription" type="string" required="false">
                     <caption>Aria description</caption>
-                    <description>The text which will be inserted into the aria-description attribute of this container. Eg. "A calendar showing your availability for this month."</description>
+                    <description>The text which will be inserted into the aria-description attribute of this container. Eg. "A button to checkout your order."</description>
                 </property>
                 <property key="ariaDisabled" type="boolean" required="true" defaultValue="false">
                     <caption>Aria disabled</caption>
                     <description>Toggle which allows screen readers to determine if an element is disabled or not. Useful for buttons built with containers.</description>
+                </property>
+                <property key="role" type="string" required="false">
+                    <caption>Role</caption>
+                    <description>Allows screen readers to determine the functional role of this container. Eg. "button"</description>
                 </property>
                 <property key="content" type="widgets" required="false">
                     <caption>Content</caption>

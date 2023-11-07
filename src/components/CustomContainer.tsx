@@ -5,6 +5,7 @@ export interface CustomContainerProps {
     ariaLabel: string;
     ariaDescription: string;
     ariaDisabled: boolean;
+    role: string;
     className: string;
     children: any;
     onClick?: () => void;
@@ -22,6 +23,7 @@ export class CustomContainer extends Component<CustomContainerProps> {
                 aria-label={this.props.ariaLabel}
                 aria-description={this.props.ariaDescription}
                 aria-disabled={this.props.ariaDisabled}
+                role={this.props.role}
             >
                 {this.props.children}
             </div>

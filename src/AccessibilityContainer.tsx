@@ -14,6 +14,7 @@ export class AccessibilityContainer extends Component<AccessibilityContainerCont
                 ariaLabel={this.props.ariaLabel ? this.props.ariaLabel : "Aria label"}
                 ariaDescription={this.props.ariaDescription ? this.props.ariaDescription : ""}
                 ariaDisabled={this.props.ariaDisabled ? this.props.ariaDisabled : false}
+                role={this.props.role ? this.props.role : ""}
                 className={`accessible-container ${this.props.class}`}
                 onClick={this.onClickHandle}
             >
