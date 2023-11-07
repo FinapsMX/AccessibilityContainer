@@ -1,10 +1,13 @@
 ## AccessibilityContainer
 A Mendix Pluggable Widget usable as a container with extra options for accessibility features.
 
+![image](https://github.com/FinapsMX/AccessibilityContainer/assets/103512027/abbf8940-deb2-418f-a0f7-201ecfc904da)
+
 ## Features
  - `aria-label` to summarise the content.
  - `aria-description` to provide a detailed description of the content.
  - `aria-disabled` for containers acting as a 'fake' button.
+ - `role` to allow screen readers to determine the functionality of the element.
  - `aria-hidden` is automatically added to all children elements.
 
 ## Usage
