@@ -8,7 +8,9 @@ export class preview extends Component<AccessibilityContainerPreviewProps> {
     render(): ReactNode {
         return (
             <CustomContainer
-                alternativeText={this.props.alternativeText ? this.props.alternativeText : "Alt"}
+                ariaLabel={this.props.ariaLabel ? this.props.ariaLabel : "Aria label"}
+                ariaDescription={this.props.ariaDescription ? this.props.ariaDescription : "Aria description"}
+                ariaDisabled={this.props.ariaDisabled ? this.props.ariaDisabled : false}
                 className={this.props.class}
             >
                 <this.contentRenderer>

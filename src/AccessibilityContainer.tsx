@@ -11,7 +11,9 @@ export class AccessibilityContainer extends Component<AccessibilityContainerCont
     render(): ReactNode {
         return (
             <CustomContainer
-                alternativeText={this.props.alternativeText ? this.props.alternativeText : "Alt"}
+                ariaLabel={this.props.ariaLabel ? this.props.ariaLabel : "Aria label"}
+                ariaDescription={this.props.ariaDescription ? this.props.ariaDescription : ""}
+                ariaDisabled={this.props.ariaDisabled ? this.props.ariaDisabled : false}
                 className={`accessible-container ${this.props.class}`}
                 onClick={this.onClickHandle}
             >
@@ -21,6 +23,6 @@ export class AccessibilityContainer extends Component<AccessibilityContainerCont
     }
 
     private onClick (): void {
-        console.log("On click.");
+        this.props.onClick?.execute();
     }
 }

@@ -9,20 +9,28 @@
     <properties>
         <propertyGroup caption="General">
             <propertyGroup caption="Accessibility">
-                <property key="alternativeText" type="string" required="false">
-                    <caption>Alternative text</caption>
-                    <description>The text which will be inserted into alt tags for this container.</description>
+                <property key="ariaLabel" type="string" required="true">
+                    <caption>Aria label</caption>
+                    <description>The text which will be inserted into the aria-label attribute of this container. Eg. "Calendar"</description>
+                </property>
+                <property key="ariaDescription" type="string" required="false">
+                    <caption>Aria description</caption>
+                    <description>The text which will be inserted into the aria-description attribute of this container. Eg. "A calendar showing your availability for this month."</description>
+                </property>
+                <property key="ariaDisabled" type="boolean" required="true" defaultValue="false">
+                    <caption>Aria disabled</caption>
+                    <description>Toggle which allows screen readers to determine if an element is disabled or not. Useful for buttons built with containers.</description>
                 </property>
                 <property key="content" type="widgets" required="false">
                     <caption>Content</caption>
-                    <description>Container contents</description>
+                    <description>Container contents.</description>
                 </property>
             </propertyGroup>
 
             <propertyGroup caption="Events">
-                <property key="placeholder" type="string" required="false">
-                    <caption>Placeholder</caption>
-                    <description/>
+                <property key="onClick" type="action" required="false">
+                    <caption>On click</caption>
+                    <description />
                 </property>
             </propertyGroup>
             

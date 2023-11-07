@@ -4,15 +4,18 @@
  * @author Mendix Widgets Framework Team
  */
 import { ComponentType, CSSProperties, ReactNode } from "react";
+import { ActionValue } from "mendix";
 
 export interface AccessibilityContainerContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    alternativeText: string;
+    ariaLabel: string;
+    ariaDescription: string;
+    ariaDisabled: boolean;
     content?: ReactNode;
-    placeholder: string;
+    onClick?: ActionValue;
 }
 
 export interface AccessibilityContainerPreviewProps {
@@ -24,7 +27,9 @@ export interface AccessibilityContainerPreviewProps {
     style: string;
     styleObject?: CSSProperties;
     readOnly: boolean;
-    alternativeText: string;
+    ariaLabel: string;
+    ariaDescription: string;
+    ariaDisabled: boolean;
     content: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
-    placeholder: string;
+    onClick: {} | null;
 }
